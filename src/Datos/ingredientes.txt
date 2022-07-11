@@ -1,0 +1,10 @@
+1;huevos;4;unidad
+2;papas;4;unidad
+3;cebollas;2;unidad
+4;morrones;2;unidad
+5;tapa de tarta;1;unidad
+6;tomate;1;unidad
+7;atún enlatado;1;lata
+8;queso parmesano;100;gramo
+9;caldo;2;litro
+58;Arroz;100;gramo
