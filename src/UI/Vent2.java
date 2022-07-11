@@ -41,7 +41,8 @@ public class Vent2 extends JFrame {
         private ButtonGroup buttonGroup;
         private JRadioButton rbDataSourceFile;
         private JRadioButton rbDataSourceSqlite;
-	
+	private JLabel lblDataSource;
+        
 	private JTextPane txtingred;
 	private JScrollPane jsping;
 	
@@ -166,7 +167,7 @@ public class Vent2 extends JFrame {
             buttonGroup = new ButtonGroup();
             // file radio button
             rbDataSourceFile = new JRadioButton("File");
-            rbDataSourceFile.setBounds(580, 40, 207, 23);
+            rbDataSourceFile.setBounds(600, 100, 207, 23);
             rbDataSourceFile.setSelected(true);
             rbDataSourceFile.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e)
@@ -181,7 +182,7 @@ public class Vent2 extends JFrame {
             
             // Sqlite radio button
             rbDataSourceSqlite = new JRadioButton("Sqlite");
-            rbDataSourceSqlite.setBounds(580, 60, 207, 23);
+            rbDataSourceSqlite.setBounds(600, 120, 207, 23);
             rbDataSourceSqlite.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e)
                 {
@@ -194,6 +195,12 @@ public class Vent2 extends JFrame {
             
             buttonGroup.add(rbDataSourceFile);
             buttonGroup.add(rbDataSourceSqlite);
+            
+            lblDataSource = new JLabel("Seleccione DataSource");
+            lblDataSource.setForeground(Color.BLACK);
+            lblDataSource.setBackground(Color.BLACK);
+            lblDataSource.setBounds(580, 80, 207, 23);
+            contentPane.add(lblDataSource);
             
             contentPane.add(rbDataSourceFile);
             contentPane.add(rbDataSourceSqlite);
